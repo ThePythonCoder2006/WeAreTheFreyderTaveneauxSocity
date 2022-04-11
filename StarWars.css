@@ -22,7 +22,7 @@ h2 {
 
 :root {
     --intro-text-time: 3s;
-    --intro-screen-time: 0s;
+    --intro-screen-time: 5s;
     --logo-time: 15s;
     --text-font-size: 5vw;
     font-size: 16px;
