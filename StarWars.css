@@ -99,7 +99,7 @@ h2 {
 }
 
 .skewed-text {
-    animation: stgenerique 75s forwards calc(var(--intro-screen-time) + var(--logo-time) - 5s) linear;
+    animation: stgenerique 75s forwards calc(var(--intro-screen-time) + var(--logo-time) - 6s) linear;
     font-size: var(--text-font-size);
     width: 100%;
 }
