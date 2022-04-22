@@ -23,7 +23,7 @@ h2 {
 :root {
     --intro-text-time: 3s;
     --intro-screen-time: 5s;
-    --logo-time: 15s;
+    --logo-time: 10s;
     --text-font-size: 5vw;
 }
 
@@ -118,7 +118,7 @@ h1.skewed-text {
     }
 
     100% {
-        transform: scale(0) translate(0px, -10000px);
+        transform: scale(0) translate(0px, -5000px);
         opacity: 0;
     }
 }
