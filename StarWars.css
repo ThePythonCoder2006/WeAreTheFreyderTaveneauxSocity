@@ -99,7 +99,7 @@ h2 {
 }
 
 .skewed-text {
-    animation: stgenerique 75s forwards calc(var(--intro-screen-time) + var(--logo-time) - 5s) linear;
+    animation: stgenerique 150s forwards calc(var(--intro-screen-time) + var(--logo-time) - 5s) linear;
     font-size: var(--text-font-size);
     width: 100%;
 }
@@ -113,12 +113,12 @@ h1.skewed-text {
         opacity: 1;
     }
 
-    40% {
+    90% {
         opacity: 0;
     }
 
     100% {
-        transform: scale(0) translate(0px, -5000px);
+        transform: scale(0) translate(0px, -7000px);
         opacity: 0;
     }
 }
@@ -155,12 +155,20 @@ h1.skewed-text {
 }
 
 audio {
-    animation: audio 12s forwards 11s;
+    animation: audio 25s forwards var(--intro-screen-time);
     position: absolute;
     top: 0;
 }
 
 @keyframes audio {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
     90% {
         opacity: 0;
     }
