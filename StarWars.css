@@ -123,7 +123,11 @@ h1.skewed-text {
         opacity: 1;
     }
 
-    90% {
+    40% {
+        opacity: 1;
+    }
+
+    43% {
         opacity: 0;
     }
 
@@ -175,7 +179,11 @@ audio {
         opacity: 1;
     }
 
-    5% {
+    9% {
+        opacity: 1;
+    }
+
+    10% {
         opacity: 0;
     }
 
