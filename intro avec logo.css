@@ -199,18 +199,26 @@ body {
     }
 
 
-    99.99% {
+    89.99% {
         opacity: 1;
     }
 
 
-    100% {
+    90% {
         transform: scale(3);
         opacity: 1;
         top: 33vh;
         left: 32vw;
         filter: hue-rotate(720deg);
 
+    }
+
+    100% {
+        opacity: 0;
+        top: 33vh;
+        left: 32vw;
+        transform: scale(3);
+        display: none;
     }
 }
 
