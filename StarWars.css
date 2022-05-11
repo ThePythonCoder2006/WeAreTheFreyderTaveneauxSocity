@@ -85,11 +85,11 @@ h2 {
 
 .text-container> :first-child {
     padding-top: 500px;
-    margin-bottom: 0.2em;
+    margin-bottom: 1em;
 }
 
 .text-container> :nth-child(2) {
-    margin-bottom: 0.2em;
+    margin-bottom: 1em;
 }
 
 
