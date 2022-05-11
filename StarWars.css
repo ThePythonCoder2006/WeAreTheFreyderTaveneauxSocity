@@ -118,6 +118,10 @@ h1.skewed-text {
     font-size: 10vw;
 }
 
+p.skewed-text {
+    padding-bottom: 0.5em;
+}
+
 @keyframes stgenerique {
     35% {
         opacity: 1;
