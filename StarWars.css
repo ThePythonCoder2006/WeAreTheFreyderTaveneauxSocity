@@ -169,7 +169,7 @@ h1.skewed-text {
 }
 
 audio {
-    animation: audio 25s forwards var(--intro-screen-time);
+    animation: audio 25s forwards calc(var(--intro-screen-time) + var(--intro-tsft));
     position: absolute;
     top: 0;
 }
@@ -233,10 +233,15 @@ audio {
         top: 300vh;
         left: 300vw;
         transform: scale(10);
+
     }
 
     52% {
         opacity: 0;
+    }
+
+    99.99% {
+        z-index: 1;
     }
 
     100% {
@@ -244,6 +249,7 @@ audio {
         opacity: 1;
         top: 33vh;
         left: 32vw;
+        z-index: -1;
     }
 }
 
@@ -292,11 +298,16 @@ audio {
         opacity: 0;
     }
 
+    99.99% {
+        z-index: 1;
+    }
+
     100% {
         transform: scale(0);
         opacity: 1;
         top: 33vh;
         left: 32vw;
+        z-index: -1;
     }
 }
 
@@ -345,11 +356,16 @@ audio {
         opacity: 1;
     }
 
+    99.99% {
+        z-index: 1;
+    }
+
     100% {
         transform: scale(0);
         opacity: 1;
         top: 33vh;
         left: 32vw;
+        z-index: -1;
     }
 }
 
@@ -407,12 +423,18 @@ audio {
 
     }
 
+    99.99% {
+        z-index: 1;
+    }
+
     100% {
         opacity: 0;
         top: 33vh;
         left: 32vw;
         transform: scale(3);
         display: none;
+        z-index: -1;
+
     }
 }
 
@@ -443,10 +465,15 @@ audio {
         opacity: 0;
     }
 
+    99.99% {
+        z-index: 1;
+    }
+
     100% {
         transform: scale(0);
         opacity: 1;
         top: 33vh;
         left: 32vw;
+        z-index: -1;
     }
 }
