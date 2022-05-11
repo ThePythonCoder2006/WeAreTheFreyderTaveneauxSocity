@@ -132,7 +132,9 @@ h1.skewed-text {
     }
 
     100% {
-        transform: scale(0) translate(0px, -7000px);
+        transform:
+            /*scale(0)*/
+            translate(0px, -7000px);
         opacity: 0;
     }
 }
