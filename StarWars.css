@@ -549,7 +549,7 @@ audio {
 }
 
 .terre {
-    width: 1000px;
+    width: 65vw;
     position: absolute;
     z-index: 2;
 }
