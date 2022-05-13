@@ -11,6 +11,11 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-size: 100%;
+    animation-name: gf;
+    animation-delay: calc(var(--intro-screen-time) + var(--logo-time) + var(--intro-tsft) + var(--skewd-text) - 5s);
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
 }
 
 p,
@@ -27,6 +32,7 @@ h2 {
     --logo-time: 10s;
     --text-font-size: 5vw;
     --intro-tsft: 13s;
+    --skewd-text: 80s;
 }
 
 .intro {
@@ -483,4 +489,67 @@ audio {
         left: 32vw;
         z-index: -1;
     }
+}
+
+
+@keyframes gf {
+    /*0% {
+        background-position: 0vw 200vh;
+    }*/
+
+    100% {
+        background-position: 0vw -200vh;
+    }
+}
+
+#fin {
+    position: absolute;
+    left: 15vw;
+    top: 200vh;
+    animation-name: hg;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--intro-screen-time) + var(--logo-time) + var(--intro-tsft) + var(--skewd-text) - 5s);
+}
+
+@keyframes hg {
+    100% {
+        left: 15vw;
+        top: 0vh;
+    }
+}
+
+.lune {
+    position: absolute;
+    animation-name: lune;
+    animation-duration: 200s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: calc(var(--intro-screen-time) + var(--logo-time) + var(--intro-tsft) + var(--skewd-text) - 5s);
+    z-index: 3;
+}
+
+@keyframes lune {
+
+    49.99% {
+        z-index: 3;
+    }
+
+    50% {
+        transform: translate(60vw, 80vh);
+        z-index: 1;
+    }
+
+    100% {
+        z-index: 1;
+    }
+
+}
+
+.terre {
+    width: 1000px;
+    position: absolute;
+    z-index: 2;
 }
