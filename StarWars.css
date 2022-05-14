@@ -522,13 +522,13 @@ audio {
 .lune {
     position: absolute;
     animation-name: lune;
-    animation-duration: 200s;
-    animation-delay: 10s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-delay: calc(var(--intro-screen-time) + var(--logo-time) + var(--intro-tsft) + var(--skewd-text) - 5s);
+    animation-delay: calc(var(--intro-screen-time) + var(--logo-time) + var(--intro-tsft) + var(--skewd-text) + 5s);
     z-index: 3;
+    top: 11vh;
 }
 
 @keyframes lune {
@@ -538,7 +538,7 @@ audio {
     }
 
     50% {
-        transform: translate(60vw, 80vh);
+        transform: translate(60vw, 70vh);
         z-index: 1;
     }
 
@@ -550,6 +550,8 @@ audio {
 
 .terre {
     width: 65vw;
+    height: 100vh;
+    object-fit: contain;
     position: absolute;
     z-index: 2;
 }
